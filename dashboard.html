@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard | Projeto 05</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="dashboard-menu">
+        <nav class="menu-dashboard">
+            <ul class="items-menu-dashboard">
+                <li id="homeIcon"><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li id="userIcon"><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="userModal">
+        <ul class="userButtons">
+            <li class="deslogar-btn"><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a></li>
+        </ul>
+    </div>
+
+    <section class="main-dashboard">
+
+        <div class="menu-sidebar">
+            <ul class="items-menu-sidebar">
+                <li><a href="#"><i class=""></i></a></li>
+                <li><a href="#" valor="gerenCategory"><i class="fa-solid fa-user-gear"></i></a></li>
+                <li><a href="#" valor="criarCategory"><i class="fa-solid fa-gears"></i></a></li>
+                <li><a href="#" valor="gerenPosts"><i class="fa-solid fa-paste"></i></a></li>
+                <li><a href="#" valor="criarPosts"><i class="fa-solid fa-floppy-disk"></i></a></li>
+                <li><a href="#" valor="gerenUsuarios"><i class="fa-solid fa-user-pen"></i></a></li>
+                <li><a href="#" valor="criarUsuarios"><i class="fa-solid fa-user-plus"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="estatisticas">
+            <section class="block-stats">
+                <div style="background-color: greenyellow; padding-bottom: 25px;" class="visits">
+                    <h3>13.567</h3>
+                    <h4>Visits</h4>
+                </div>
+                <div style="background-color:aqua; padding-bottom: 25px;" class="shares">
+                    <h3>126</h3>
+                    <h4>Shares</h4>
+                </div>
+                <div style="background-color: blueviolet; padding-bottom: 25px;" class="users">
+                    <h3>128</h3>
+                    <h4>Users</h4>
+                </div>
+                <div style="background-color: aquamarine; padding-bottom: 25px;" class="posts">
+                    <h3>37</h3>
+                    <h4>Posts</h4>
+                </div>
+            </section>
+            <section class="infos-stats">
+                <div class="visits-recents">
+                    <h2>Recents Visits</h2>
+                    <ul class="list-visits-recents">
+                        <li><p>192.168.1.97</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                        <li><p>192.158.1.38</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                        <li><p>192.158.1.89</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                        <li><p>192.158.1.96</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                    </ul>
+                </div>
+                <div class="users-recents">
+                    <h2>Recents Users</h2>
+                    <ul class="list-visits-recents">
+                        <li><p>Daniel Avaro</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                        <li><p>João da Silva</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                        <li><p>Jhonny Robert</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                        <li><p>Roberto Jhonnas</p> <span><i class="fa-solid fa-clock"></i> 30 minutes ago</span></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="gerenciarCategory">
+            <section class="categorys">
+                <h2>Categorys</h2>
+                <div class="categorias">
+
+                </div>
+                
+            </section>
+            <section class="category-infos">
+                <h2>Back-End</h2>
+                <div class="infos-category">
+                    <label for="nomeCategory">Nome: </label>
+                    <input type="text" name="nome-category" id="nomeCategory" disabled value="Back-End">
+                    <label for="postslimitCategory">Posts Limit: </label>
+                    <input type="number" name="postslimit-category" id="postslimitCategory" disabled value="25">
+                    <label for="dateCategory">Data: </label>
+                    <input type="datetime" name="date-category" id="dateCategory" disabled value="2022-03-21">
+                </div>
+            </section>
+        </div>
+
+        <div class="criarCategory">
+            <h2>Create Category</h2>
+            <section class="createCategory">
+                <form method="post">
+                    <label for="nameCategory">Name: </label>
+                    <input type="text" name="name-category" id="nameCategory">
+                    <label for="limitPostsCategory">Posts Limit: </label>
+                    <input type="number" name="limitPosts-category" id="limitPostsCategory">
+                    <input type="submit" value="Criar">
+                </form>
+            </section>
+        </div>
+
+        <div class="gerenciarPosts">
+            <section class="posts">
+                <h2>Posts</h2>
+                <div class="postagens">
+                
+                </div>
+            </section>
+            <section class="posts-infos">
+                <h2>Posts</h2>
+                <div class="infos-post">
+                    <label for="tituloPostInfos">Titulo: </label>
+                    <input type="text" name="titulo-post-infos" id="tituloPostInfos" disabled value="">
+                    <label for="descPostInfos">Descrição: </label>
+                    <textarea name="desc-post-infos" id="descPostInfos" cols="30" rows="10" disabled></textarea>
+                    <label for="thumbPostInfos">Thumb: </label>
+                    <input type="text" name="thumb-post-infos" id="thumbPostInfos" disabled value="">
+                    <label for="categoryPostInfos">Categoria: </label>
+                    <input type="text" name="category-post-infos" id="categoryPostInfos" disabled value="">
+                    <label for="authorPostInfos">Autor: </label>
+                    <input type="text" name="author-post-infos" id="authorPostInfos" disabled value="">
+                </div>
+            </section>
+        </div>
+
+        <div class="criarPosts">
+            <h2>Create Posts</h2>
+            <section class="createPost">
+                <form method="post">
+                    <label for="tituloPost">Titulo: </label>
+                    <input type="text" name="titulo-post" id="tituloPost">
+                    <label for="descPost">Descrição: </label>
+                    <textarea name="desc-post" id="descPost" cols="30" rows="10"></textarea>
+                    <label for="thumbPost">Thumb: </label>
+                    <input type="file" name="thumb-post" id="thumbPost">
+                    <label for="categoryPost">Categoria:</label>
+                    <select name="category-post" id="categoryPost">
+                    </select>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+
+
+        <div class="gerenciarUsers">
+            <section class="users">
+                <h2>Users</h2>
+                <div class="usuarios">
+
+                </div>
+            </section>
+            <section class="users-infos">
+                <h2>Gustavo</h2>
+                <div class="infos-users">
+                    <label for="nomeUsers">Nome: </label>
+                    <input type="text" name="nome-users" id="nomeUsers" disabled value="Gustavo">
+                    <label for="emailUsers">Email: </label>
+                    <input type="email" name="email-users" id="emailUsers" disabled value="fariasgusgustavo@gmail.com">
+                    <label for="senhaUsers">Senha: </label>
+                    <input type="text" name="senha-users" id="senhaUsers" disabled value="123456">
+                    <label for="priorityUsers">Prioridade: </label>
+                    <input type="text" name="priority-users" id="priorityUsers" disabled value="1">
+                    <label for="postsUsers">Posts: </label>
+                    <select name="posts-users" id="postsUsers" >
+                        
+                    </select>
+                </div>
+            </section>
+        </div>
+
+        <div class="criarUsers">
+            <h2>Create User</h2>
+            <section class="createUser">
+                <form method="post">
+                    <label for="nomeUser">Nome: </label>
+                    <input type="text" name="nome-user" id="nomeUser">
+                    <label for="emailUser">Email: </label>
+                    <input type="email" name="email-user" id="emailUser">
+                    <label for="senhaUser">Senha: </label>
+                    <input type="password" name="senha-user" id="senhaUser">
+                    <label for="priorityUser">Prioridade: </label>
+                    <select name="priority-user" id="priorityUser">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+
+    </section>
+
+
+    <section class="bg-login">
+        <section class="login-dashboard">
+            <div class="login">
+                <h2>Login</h2>
+                <form method="post">
+                    <input type="email" name="email-login" id="emailLogin" placeholder="Digite seu email...">
+                    <input type="password" name="senha-login" id="senhaLogin" placeholder="Digite sua senha...">
+                    <input type="submit" value="Entrar!">
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <!--
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyA8LC8O3TXJ4U-xqy1jHeXEsliE_mlegos",
+            authDomain: "projeto05-blog.firebaseapp.com",
+            projectId: "projeto05-blog",
+            storageBucket: "projeto05-blog.appspot.com",
+            messagingSenderId: "359158367095",
+            appId: "1:359158367095:web:4be8cd5cb92da6fe199772",
+            measurementId: "G-ZRQ1VNG39C"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>-->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/b2796bb008.js" crossorigin="anonymous"></script>
+</body>
+</html>

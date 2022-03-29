@@ -1,0 +1,1881 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --Pagina Principal-- */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height:50px;
+    background-color: rgba(216, 216, 216, 0.699);
+}
+
+header div{
+    width: 50%;
+}
+
+header div.logo{
+    text-align: center;
+}
+
+header div.logo h2 a{
+    text-align: center;
+    font-size: 23pt;
+    font-family: 'Festive', cursive;
+    font-weight: bolder;
+    color: rgba(66, 66, 66, 0.795);
+    text-shadow: 1px 1px 7px rgba(92, 92, 92, 0.479);
+    text-decoration: none;
+}
+
+header div.menu nav.menu-desktop ul{
+    list-style: none;
+    text-align: center;
+}
+
+header div.menu nav.menu-desktop ul li{
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+header div.menu nav.menu-desktop ul li a{
+    color: rgba(44, 44, 44, 0.795);
+    text-shadow: 1px 1px 7px rgba(92, 92, 92, 0.479);
+    text-decoration: none;
+    font-size: 15pt;
+    transition: 0.3s;
+}
+
+header div.menu nav.menu-desktop ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+header div.menu nav.menu-desktop ul li .btn-logar{
+    background-color: rgb(168, 168, 168);
+    box-shadow: 1px 1px 3px rgba(43, 43, 43, 0.712);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(92, 92, 92, 0.479);
+    border-radius: 15px;
+    width: 40px;
+    height: 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+header div.menu nav.menu-desktop ul li .btn-logar:hover{
+    background-color: rgb(131, 131, 131);
+    color: white;
+}
+
+header div.menu nav.menu-mobile {
+    display: none;
+}
+
+header div.menu nav.menu-mobile h2{
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+header div.menu nav.menu-mobile ul.items-menu-mobile{
+    background-color: rgba(148, 148, 148, 0.61);
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 7.5%;
+    list-style: none;
+}
+
+header div.menu nav.menu-mobile ul.items-menu-mobile li{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    padding: 5px;
+}
+
+header div.menu nav.menu-mobile ul.items-menu-mobile li a{
+    text-decoration: none;
+    color: rgba(44, 44, 44, 0.795);
+    text-shadow: 1px 1px 7px rgba(92, 92, 92, 0.479);
+    font-size: 15pt;
+    transition: 0.3s;
+}
+
+header div.menu nav.menu-mobile ul.items-menu-mobile li a:hover{
+   color: rgb(0, 0, 0);
+}
+
+
+header div.menu nav.menu-mobile ul.items-menu-mobile li a.btn-logar{
+    background-color: rgb(121, 121, 121);
+    box-shadow: 1px 1px 3px rgba(43, 43, 43, 0.712);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(92, 92, 92, 0.479);
+    border-radius: 15px;
+    width: 50px;
+    height: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+header div.menu nav.menu-mobile ul.items-menu-mobile li a.btn-logar:hover{
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+
+section.search{
+    max-width: 768px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.search div{
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.search div p{
+    font-size: 18pt;
+    text-align: center;
+}
+
+section.search div p input[type=text]{
+    width: 35%;
+    height: 35px;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    box-shadow: 1px 1px 2px rgba(92, 92, 92, 0.575);
+    border: 1px solid rgb(185, 185, 185);
+} 
+
+section.search div p input[type=text]:focus{
+    outline: 0;
+} 
+
+section.main {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+section.main .infos{
+    width: 30%;
+}
+
+section.main .noticias-area{
+    width: 70%;
+}
+
+section.main .infos .categorias{
+    margin: 0 auto;
+    width: 70%;
+}
+
+section.main .infos .categorias .title-category{
+    text-align: left;
+    background-color: #ddd;
+    padding: 15px 25px;
+}
+
+section.main .infos .categorias .title-category h2{
+    color: #666;
+    font-size: 18pt;
+}
+
+section.main .infos .categorias .title-category h2 i{
+    color: white;
+}
+
+section.main .infos .categorias .categorys{
+    background-color: #eee;
+    padding: 25px;
+}
+
+section.main .infos .categorias .categorys ul{
+    list-style:none;
+}
+
+section.main .infos .categorias .categorys ul li{
+    padding: 5px;
+}
+
+section.main .infos .categorias .categorys ul li i{
+    color: #b3c1c7;
+    transition: 0.3s;
+}
+
+section.main .infos .categorias .categorys ul li a{
+    color: #585DD2;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+section.main .infos .categorias .categorys ul li:hover a{
+    color: #333;
+}
+
+section.main .infos .categorias .categorys ul li:hover i{
+    color: #333;
+}
+
+section.main .infos .recents{
+    margin: 20px auto;
+    width: 70%;
+}
+
+section.main .infos .recents .title-recents{
+    text-align: left;
+    background-color: #ddd;
+    padding: 15px 25px;
+}
+
+section.main .infos .recents .title-recents h2{
+    color: #666;
+    font-size: 18pt;
+}
+
+section.main .infos .recents .title-recents h2 i{
+    color: white;
+}
+
+section.main .infos .recents .recents-list{
+    background-color: #eee;
+    padding: 25px;
+}
+
+section.main .infos .recents .recents-list ul{
+    list-style:none;
+}
+
+section.main .infos .recents .recents-list ul li{
+    padding: 5px;
+}
+
+section.main .infos .recents .recents-list ul li i{
+    color: #b3c1c7;
+    transition: 0.3s;
+}
+
+section.main .infos .recents .recents-list ul li a{
+    color: #585DD2;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+section.main .infos .recents .recents-list ul li:hover a{
+    color: #333;
+}
+
+section.main .infos .recents .recents-list ul li:hover i{
+    color: #333;
+}
+
+
+section.main .infos .vistos{
+    margin: 20px auto;
+    width: 70%;
+}
+
+section.main .infos .vistos .title-vistos{
+    text-align: left;
+    background-color: #ddd;
+    padding: 15px 25px;
+}
+
+section.main .infos .vistos .title-vistos h2{
+    color: #666;
+    font-size: 18pt;
+}
+
+section.main .infos .vistos .title-vistos h2 i{
+    color: white;
+}
+
+section.main .infos .vistos .vistos-list{
+    background-color: #eee;
+    padding: 25px;
+}
+
+section.main .infos .vistos .vistos-list ul{
+    list-style:none;
+}
+
+section.main .infos .vistos .vistos-list ul li{
+    padding: 5px;
+}
+
+section.main .infos .vistos .vistos-list ul li i{
+    color: #b3c1c7;
+    transition: 0.3s;
+}
+
+section.main .infos .vistos .vistos-list ul li a{
+    color: #585DD2;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+section.main .infos .vistos .vistos-list ul li:hover a{
+    color: #333;
+}
+
+section.main .infos .vistos .vistos-list ul li:hover i{
+    color: #333;
+}
+
+section.main .noticias-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+section.main .noticias-area .noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+section.main .noticias-area .noticias .noticia-single{
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid rgb(168, 168, 168);
+    width: 100%;
+    max-width: 75%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 5px rgba(87, 87, 87, 0.747);
+}
+
+section.main .noticias-area .noticias .noticia-single .img-noticia,
+section.main .noticias-area .noticias .noticia-single .informacoes-noticia
+{
+    width: 50%;
+}
+
+section.main .noticias-area .noticias .noticia-single .img-noticia img{
+    max-width: 100%;
+    width: 100%;
+    padding-right: 10px;
+}
+
+section.main .noticias-area .noticias .noticia-single .informacoes-noticia h2{
+    padding-bottom: 5px;
+}
+
+section.main .noticias-area .noticias .noticia-single .informacoes-noticia h2 a{
+    font-size: 15pt;
+    text-decoration: none;
+    color: #585DD2;
+    transition: 0.3s;
+}
+
+section.main .noticias-area .noticias .noticia-single .informacoes-noticia h2 a:hover{
+    color: #333;
+}
+
+section.main .noticias-area .noticias .noticia-single .informacoes-noticia span{
+    font-size: 8pt;
+    padding-bottom: 5px;
+}
+
+section.main .noticias-area .noticias .noticia-single .informacoes-noticia p{
+    text-align: justify;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+
+section.main .noticias-area .paginator {
+    max-width: 25%;
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section.main .noticias-area .paginator div{
+    background-color: rgba(221, 221, 221, 0.836);
+    padding: 5px 10px;
+    font-weight: bolder;
+    font-size: 16pt;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section.main .noticias-area .paginator div:hover{
+    background-color: rgb(184, 184, 184);
+}
+
+section.main .noticias-area .paginator div.selected{
+    background-color: #8e8fbb;
+}
+
+section.main .noticias-area .paginator div.selected:hover{
+    background-color: #7d7da1;
+}
+
+div.criarModalLogar{
+    background-color: rgba(172, 172, 172, 0.61);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+div.criarModalLogar div.modalLogar{
+    max-width: 768px;
+    width: 75%;
+    margin: 25px auto;
+    background-color: white;
+    height: 40%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+div.criarModalLogar div.modalLogar h2.closeModalLogar{
+    position: absolute;
+    top: 2.5%;
+    left: 87%;
+    cursor: pointer;
+    font-size: 15pt;
+}
+
+div.criarModalLogar div.modalLogar form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 45px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+div.criarModalLogar div.modalLogar form label{
+    font-size: 15pt;
+    text-align: left;
+    max-width: 50%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.criarModalLogar div.modalLogar form input{
+    max-width: 100%;
+    width: 50%;
+    padding: 3px 10px;
+    margin: 5px auto;
+}
+
+div.criarModalLogar div.modalLogar form input:focus{
+    outline: 0;
+}
+
+div.criarModalLogar div.modalLogar form input[type=submit]{
+    background-image: linear-gradient(to top left,#37397c,#4146d6, blue);
+    border: 0;
+    color: white;
+    text-shadow: 1px 1px 8px rgba(29, 29, 29, 0.842);
+    font-size: 16pt;
+    cursor: pointer;
+    transition: 0.3s;
+}    
+
+div.criarModalLogar div.modalLogar form input[type=submit]:hover{
+    background-image: linear-gradient(to top left,#292a5a,#3236a0, rgb(2, 2, 184));
+}   
+
+div.criarModalLogar div.modalLogar form h3 a{
+    text-decoration: none;
+    color: #585DD2;
+    text-align: center;
+    font-size: 12pt;
+    margin-left: 35%;
+    transition: 0.3s;
+}
+
+div.criarModalLogar div.modalLogar form h3 a:hover{
+    color: #464aa7;
+}
+
+div.criarModalCadastrar{
+    background-color: rgba(172, 172, 172, 0.61);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+div.criarModalCadastrar div.modalCadastrar{
+    max-width: 768px;
+    width: 75%;
+    margin: 25px auto;
+    background-color: white;
+    height: 57%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+div.criarModalCadastrar div.modalCadastrar h2.closeModalCadastrar{
+    position: absolute;
+    top: 2.5%;
+    left: 87%;
+    cursor: pointer;
+    font-size: 15pt;
+}
+
+div.criarModalCadastrar div.modalCadastrar form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 45px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+div.criarModalCadastrar div.modalCadastrar form label{
+    font-size: 15pt;
+    text-align: left;
+    max-width: 50%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.criarModalCadastrar div.modalCadastrar form input{
+    max-width: 100%;
+    width: 50%;
+    padding: 3px 10px;
+    margin: 5px auto;
+}
+
+div.criarModalCadastrar div.modalCadastrar form input:focus{
+    outline: 0;
+}
+
+div.criarModalCadastrar div.modalCadastrar form input[type=submit]{
+    background-image: linear-gradient(to top left,#37397c,#4146d6, blue);
+    border: 0;
+    color: white;
+    text-shadow: 1px 1px 8px rgba(29, 29, 29, 0.842);
+    font-size: 16pt;
+    cursor: pointer;
+    transition: 0.3s;
+}    
+
+div.criarModalCadastrar div.modalCadastrar form input[type=submit]:hover{
+    background-image: linear-gradient(to top left,#292a5a,#3236a0, rgb(2, 2, 184));
+}   
+
+div.criarModalCadastrar div.modalCadastrar form h3 a{
+    text-decoration: none;
+    color: #585DD2;
+    text-align: center;
+    font-size: 12pt;
+    margin-left: 35%;
+    transition: 0.3s;
+}
+
+div.criarModalCadastrar div.modalCadastrar form h3 a:hover{
+    color: #464aa7;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height:50px;
+    background-color: rgba(216, 216, 216, 0.699);
+}
+
+footer div{
+    width: 50%;
+}
+
+footer div.logo{
+    text-align: center;
+}
+
+footer div.logo h4 {
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 10px;
+    font-weight: normal;
+    color: rgba(66, 66, 66, 0.795);
+    text-decoration: none;
+}
+
+footer div.menu nav.menu-desktop{
+    display: block;
+}
+
+footer div.menu nav.menu-desktop ul{
+    list-style: none;
+    text-align: center;
+}
+
+footer div.menu nav.menu-desktop ul li{
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+footer div.menu nav.menu-desktop ul li a{
+    color: rgba(44, 44, 44, 0.795);
+    text-shadow: 1px 1px 7px rgba(92, 92, 92, 0.479);
+    text-decoration: none;
+    font-size: 15pt;
+    transition: 0.3s;
+}
+
+footer div.menu nav.menu-desktop ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+footer div.menu nav.menu-desktop ul li .btn-logar{
+    background-color: rgb(168, 168, 168);
+    box-shadow: 1px 1px 3px rgba(43, 43, 43, 0.712);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(92, 92, 92, 0.479);
+    border-radius: 15px;
+    width: 40px;
+    height: 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+footer div.menu nav.menu-desktop ul li .btn-logar:hover{
+    background-color: rgb(131, 131, 131);
+    color: white;
+}
+
+footer div.menu nav.menu-mobile {
+    display: none;
+}
+
+footer div.menu nav.menu-mobile h2{
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer div.menu nav.menu-mobile ul.items-menu-mobile{
+    background-color: rgba(148, 148, 148, 0.61);
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    list-style: none;
+    margin-top: 2560px;
+}
+
+footer div.menu nav.menu-mobile ul.items-menu-mobile li{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    padding: 5px;
+}
+
+footer div.menu nav.menu-mobile ul.items-menu-mobile li a{
+    text-decoration: none;
+    color: rgba(44, 44, 44, 0.795);
+    text-shadow: 1px 1px 7px rgba(92, 92, 92, 0.479);
+    font-size: 15pt;
+    transition: 0.3s;
+}
+
+footer div.menu nav.menu-mobile ul.items-menu-mobile li a:hover{
+   color: rgb(0, 0, 0);
+}
+
+footer div.menu nav.menu-mobile ul.items-menu-mobile li a.btn-logar{
+    background-color: rgb(121, 121, 121);
+    box-shadow: 1px 1px 3px rgba(43, 43, 43, 0.712);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(92, 92, 92, 0.479);
+    border-radius: 15px;
+    width: 50px;
+    height: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+footer div.menu nav.menu-mobile ul.items-menu-mobile li a.btn-logar:hover{
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    section.main .infos{
+        width: 100%;
+    }
+    
+    section.main .noticias-area{
+        width: 100%;
+    }
+
+    section.main .noticias-area .noticias .noticia-single .img-noticia,
+    section.main .noticias-area .noticias .noticia-single .informacoes-noticia
+    {
+        width: 100%;
+    }
+
+    section.main .noticias-area .noticias .noticia-single{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.main .noticias-area .paginator {
+        max-width: 50%;
+        margin: 10px auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    section.search div p input[type=text]{
+        width: 50%;
+    } 
+
+    header div.menu nav.menu-desktop {
+        display: none;
+    }
+    
+
+    header div.menu nav.menu-mobile {
+        display: block;
+    }
+
+    header div.menu nav.menu-mobile ul.items-menu-mobile{
+        display: none;
+    }
+
+    footer div.menu nav.menu-desktop{
+        display: none;
+    }
+
+    footer div.menu nav.menu-mobile {
+        display: block;
+    }
+    
+    footer div.menu nav.menu-mobile ul.items-menu-mobile{
+        display: none;
+    }
+
+
+    footer div.logo h4{
+        font-size: 12pt;
+        margin-top: 15px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    div.criarModallogar div.modalLogar {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    div.criarModalLogar div.modalLogar h2.closeModalLogar{
+        position: absolute;
+        top: 2.5%;
+        left: 79%;
+    }
+
+    div.criarModalLogar div.modalLogar form h3 a{
+        margin-left: 40%;
+    }
+
+    div.criarModalCadastrar div.modalCadastrar {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    div.criarModalCadastrar div.modalCadastrar h2.closeModalCadastrar{
+        position: absolute;
+        top: 2.5%;
+        left: 65%;
+    }
+
+    div.criarModalCadastrar div.modalCadastrar form h3 a{
+        margin-left: 40%;
+    }
+
+}
+
+/* --Pagina Informações-- */
+
+div.noticias-area div.img-noticia-infos {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+div.noticias-area div.infos-noticia {
+    max-width: 95%;
+    width: 100%;
+}
+
+div.noticias-area div.infos-noticia h2{
+    color: #777;
+    font-size: 25pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.noticias-area div.infos-noticia span{
+    color: rgb(182, 182, 182);
+    font-size: 13pt;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+
+div.noticias-area div.infos-noticia p{
+    max-width:98%;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+div.noticias-area div.comunity-noticia {
+    max-width: 95%;
+    width: 100%;
+    padding: 5px;
+}
+
+div.noticias-area div.comunity-noticia h2{
+    color: #777;
+    font-size: 20pt;
+    margin: 10px 0;
+}
+
+div.noticias-area div.comunity-noticia div.mandar-comentario{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.noticias-area div.comunity-noticia div.mandar-comentario h2{
+    background-color: #9b9b9b;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+}
+
+div.noticias-area div.comunity-noticia div.mandar-comentario h2 i{
+    margin-left: 2px;
+    color: white;
+    font-size: 17pt;
+}
+
+div.noticias-area div.comunity-noticia div.mandar-comentario input[type=text]{
+    border: 0;
+    border-bottom: 1px solid #555;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 80%;
+    max-width: 100%;
+    font-size: 15pt;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.noticias-area div.comunity-noticia div.mandar-comentario input[type=text]:focus{
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+    border-bottom: 2px solid #333;
+}
+
+div.noticias-area div.comunity-noticia div.mandar-comentario input[type=submit]{
+    max-width: 100%;
+    width: 10%;
+    height: 35px;
+    padding: 0px 5px;
+    border: 0;
+    box-shadow: 1px 1px 5px rgba(85, 85, 85, 0.815);
+    margin-top: 25px;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px rgb(82, 82, 82);
+    background-color: rgb(168, 168, 168);
+    transition: 0.3s;
+}
+
+div.noticias-area div.comunity-noticia div.mandar-comentario input[type=submit]:hover{
+    background-color: rgb(134, 134, 134);
+}
+
+div.noticias-area div.comunity-noticia div.comentarios{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.noticias-area div.comunity-noticia div.comentarios div.comentario-single{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+div.noticias-area div.comunity-noticia div.comentarios div.comentario-single h2{
+    background-color: #9b9b9b;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+}
+
+div.noticias-area div.comunity-noticia div.comentarios div.comentario-single h2 i{
+    margin-left: 2px;
+    color: white;
+    font-size: 17pt;
+}
+
+div.noticias-area div.comunity-noticia div.comentarios div.comentario-single h3{
+    width: 80%;
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 18pt;
+    margin-left: 10px;
+    color: #979797;
+    text-shadow: 1px 1px 2px rgba(121, 121, 121, 0.459);
+}
+
+@media screen and (max-width:768px) {
+    div.noticias-area div.img-noticia-infos {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    div.noticias-area div.img-noticia-infos img{
+        max-width: 100%;
+        width: 98%;
+        margin-left: 5px;
+    }
+
+    div.noticias-area div.comunity-noticia div.mandar-comentario input[type=submit]{
+        max-width: 100%;
+        width: 15%;
+    }
+
+    div.noticias-area div.infos-noticia h2{
+        margin-left: 5px;
+    }
+    
+    div.noticias-area div.infos-noticia span{
+        margin-left: 5px;
+    }
+    
+    div.noticias-area div.infos-noticia p{
+        margin-left: 5px;
+    }
+    
+}
+
+/* --Pagina Dashboard-- */
+
+header.dashboard-menu{
+    width: 100%;
+    height: 30px;
+}
+
+header.dashboard-menu nav.menu-dashboard{
+    position: relative;
+    left: 93%;
+}
+
+header.dashboard-menu nav.menu-dashboard ul.items-menu-dashboard{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    list-style: none;
+}
+
+header.dashboard-menu nav.menu-dashboard ul.items-menu-dashboard li{
+    margin-right: 3px;
+}
+
+header.dashboard-menu nav.menu-dashboard ul.items-menu-dashboard li a{
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header.dashboard-menu nav.menu-dashboard ul.items-menu-dashboard li a:hover{
+    color: rgb(73, 73, 73);
+}
+
+div.userModal{
+    background-color: rgba(241, 241, 241, 0.884);
+    border: 1px solid rgba(155, 155, 155, 0.486);
+    padding: 5px;
+    width: 8%;
+    position: absolute;
+    left: 91.5%;
+    top: 3.8%;
+    display: none;
+}
+
+div.userModal ul.userButtons{
+    list-style: none;
+    padding: 5px;
+}
+
+div.userModal ul.userButtons li{
+    margin-top: 5px;
+    font-size: 12pt;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+}
+
+div.userModal ul.userButtons li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+div.userModal ul.userButtons li a:hover{
+    color: rgb(73, 73, 73);
+}
+
+div.userModal ul.userButtons li.deslogar-btn{
+    border: 0;
+    border: 1px solid rgb(253, 23, 23);
+    padding: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.userModal ul.userButtons li.deslogar-btn a{
+    color: rgb(253, 23, 23);
+    font-size: 13.5pt;
+    margin-left: 2px;
+}
+
+div.userModal ul.userButtons li.deslogar-btn:hover{
+    border: 1px solid rgb(173, 14, 14);
+}
+
+div.userModal ul.userButtons li.deslogar-btn:hover a{
+    color: rgb(173, 14, 14);
+}
+
+section.main-dashboard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.menu-sidebar{
+    height: 100%;
+    position: fixed;
+    background-color: rgba(202, 202, 202, 0.863);
+    padding: 8px;
+    width: 3%;
+    top: 0%;
+}
+
+section.main-dashboard div.menu-sidebar ul.items-menu-sidebar{
+    list-style:none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.main-dashboard  div.menu-sidebar ul.items-menu-sidebar li{
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+section.main-dashboard  div.menu-sidebar ul.items-menu-sidebar li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+section.main-dashboard  div.menu-sidebar ul.items-menu-sidebar li a:hover{
+    color: rgb(73, 73, 73);
+}
+
+section.main-dashboard div.estatisticas{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.estatisticas section.block-stats{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+section.main-dashboard div.estatisticas section.block-stats div{
+    background-color: blue;
+    padding: 15px 15px 20px 15px;
+    text-align: center;
+    width: 25%;
+    height: 75px;
+    margin: 25px;
+    color: white;
+    font-size: 17pt;
+    box-shadow: 1px 1px 10px rgba(66, 66, 66, 0.637);
+}
+
+section.main-dashboard div.estatisticas section.infos-stats{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 75px;
+    flex-wrap: wrap;
+    position: relative;
+    left: 25px;
+}
+
+section.main-dashboard div.estatisticas section.infos-stats div.visits-recents,
+section.main-dashboard div.estatisticas section.infos-stats div.users-recents{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.estatisticas section.infos-stats div.visits-recents h2,
+section.main-dashboard div.estatisticas section.infos-stats div.users-recents h2{
+    font-size: 18pt;
+    background-image: linear-gradient(to right , #b8f55e,#64f740,#5ef5f5,#84fad2);
+    text-align: center;
+    width: 90%;
+    color: white;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+
+section.main-dashboard div.estatisticas section.infos-stats div.visits-recents ul,
+section.main-dashboard div.estatisticas section.infos-stats div.users-recents ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+section.main-dashboard div.estatisticas section.infos-stats div.visits-recents ul li,
+section.main-dashboard div.estatisticas section.infos-stats div.users-recents ul li{
+    color: rgb(184, 184, 184);
+    font-size: 16pt;
+    margin-top: 8px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    padding: 2px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+section.main-dashboard div.estatisticas section.infos-stats div.visits-recents ul li p,
+section.main-dashboard div.estatisticas section.infos-stats div.users-recents ul li p{
+   text-align: left;
+   padding-left: 4px;
+   width: 50%;
+}
+
+section.main-dashboard div.estatisticas section.infos-stats div.visits-recents ul li span,
+section.main-dashboard div.estatisticas section.infos-stats div.users-recents ul li span{
+   text-align: right;
+   font-size: 13pt;
+   padding-right: 4px;
+   width: 50%;
+}
+
+section.main-dashboard div.gerenciarCategory{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.gerenciarCategory section.categorys{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.gerenciarCategory section.categorys h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.gerenciarCategory section.categorys div.categorias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.main-dashboard div.gerenciarCategory section.categorys div.categorias div.category-single{
+    border: 1px solid rgb(163, 163, 163);
+    padding: 15px;
+    width: 15%;
+    margin-right: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+section.main-dashboard div.gerenciarCategory section.categorys div.categorias div.category-single h4{
+    font-size: 12pt;
+    text-align: center;
+}
+
+section.main-dashboard div.gerenciarCategory section.categorys div.categorias div.category-single h4 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+section.main-dashboard div.gerenciarCategory section.categorys div.categorias div.category-single h4 a:hover{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+section.main-dashboard div.gerenciarCategory section.category-infos{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.gerenciarCategory section.category-infos h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.gerenciarCategory section.category-infos div.infos-category{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section.main-dashboard div.gerenciarCategory section.category-infos div.infos-category input{
+    width: 100%;
+    padding: 3px;
+    font-size: 15pt;
+    margin-top: 10px;
+    background-color: rgba(199, 199, 199, 0.747);
+    border: 0.2px solid rgb(124, 124, 124);
+    outline: 0;
+    box-shadow: 1px 1px 3px rgba(82, 82, 82, 0.479);
+}
+
+section.main-dashboard div.gerenciarCategory section.category-infos div.infos-category label{
+    width: 100%;
+    font-size: 18pt;
+    margin-top: 5px;
+}
+
+section.main-dashboard div.criarCategory{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.criarCategory h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.criarCategory section.createCategory{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.criarCategory section.createCategory form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.criarCategory section.createCategory form input{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 13pt;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+}
+
+section.main-dashboard div.criarCategory section.createCategory form label{
+    width: 100%;
+    font-size: 18pt;
+    margin-top: 10px;
+    position: relative;
+    left: 12.5%;
+}
+
+section.main-dashboard div.criarCategory section.createCategory form input[type=submit]{
+    background-image: linear-gradient(to right , #b8f55e,#64f740,#5ef5f5,#84fad2);
+    border: 0;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    font-size: 15pt;
+    text-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    transition: 0.5s;
+}
+
+section.main-dashboard div.criarCategory section.createCategory form input[type=submit]:hover{
+    background-image: linear-gradient(to right , #9bce4f,#55ca37,#51cfcf,#73d6b5);
+}
+
+section.main-dashboard div.gerenciarPosts {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts div.postagens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts div.postagens div.posts-single{
+    border: 1px solid rgb(163, 163, 163);
+    padding: 15px;
+    width: 24.5%;
+    margin-right: 0.5%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts div.postagens div.posts-single img{
+    max-width: 100%;
+    width: 100%;
+    height: 75%;
+    border: 1px solid rgb(177, 177, 177);
+}
+
+section.main-dashboard div.gerenciarPosts section.posts div.postagens div.posts-single h4{
+    font-size: 12pt;
+    text-align: left;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts div.postagens div.posts-single h4 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts div.postagens div.posts-single h4 a:hover{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+section.main-dashboard div.gerenciarPosts section.posts div.postagens div.posts-single h5{
+    color: rgb(173, 173, 173);
+    text-align: center;
+    font-size: 10pt;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts-infos{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts-infos h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts-infos div.infos-post{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section.main-dashboard div.gerenciarPosts section.posts-infos div.infos-post input{
+    width: 100%;
+    padding: 3px;
+    font-size: 15pt;
+    margin-top: 10px;
+    background-color: rgba(199, 199, 199, 0.747);
+    border: 0.2px solid rgb(124, 124, 124);
+    outline: 0;
+    box-shadow: 1px 1px 3px rgba(82, 82, 82, 0.479);
+}
+
+section.main-dashboard div.gerenciarPosts section.posts-infos div.infos-post textarea{
+    width: 100%;
+    padding: 3px;
+    font-size: 15pt;
+    margin-top: 10px;
+    background-color: rgba(199, 199, 199, 0.747);
+    border: 0.2px solid rgb(124, 124, 124);
+    outline: 0;
+    resize: none;
+    box-shadow: 1px 1px 3px rgba(82, 82, 82, 0.479);
+}
+
+section.main-dashboard div.gerenciarPosts section.posts-infos div.infos-post label{
+    width: 100%;
+    font-size: 18pt;
+    margin-top: 5px;
+}
+
+section.main-dashboard div.criarPosts{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: 700px;
+    overflow-x: hidden;
+    display: none;
+}
+
+section.main-dashboard div.criarPosts h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.criarPosts section.createPost{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.criarPosts section.createPost form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.criarPosts section.createPost form input{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 13pt;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    border: 1px solid rgb(168, 168, 168);
+}
+
+section.main-dashboard div.criarPosts section.createPost form textarea{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 13pt;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    border: 1px solid rgb(168, 168, 168);
+    resize: none;
+}
+
+section.main-dashboard div.criarPosts section.createPost form select{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 13pt;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    border: 1px solid rgb(168, 168, 168);
+}
+
+section.main-dashboard div.criarPosts section.createPost form label{
+    width: 100%;
+    font-size: 18pt;
+    margin-top: 10px;
+    position: relative;
+    left: 12.5%;
+}
+
+section.main-dashboard div.criarPosts section.createPost form input[type=submit]{
+    background-image: linear-gradient(to right , #b8f55e,#64f740,#5ef5f5,#84fad2);
+    border: 0;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    font-size: 15pt;
+    text-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    transition: 0.5s;
+}
+
+section.main-dashboard div.criarPosts section.createPost form input[type=submit]:hover{
+    background-image: linear-gradient(to right , #9bce4f,#55ca37,#51cfcf,#73d6b5);
+}
+
+section.main-dashboard div.gerenciarUsers {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.gerenciarUsers section.users{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.gerenciarUsers section.users h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.gerenciarUsers section.users div.usuarios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.main-dashboard div.gerenciarUsers section.users div.usuarios div.users-single{
+    border: 1px solid rgb(163, 163, 163);
+    padding: 15px;
+    width: 15%;
+    margin-right: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+section.main-dashboard div.gerenciarUsers section.users div.usuarios div.users-single h4{
+    font-size: 12pt;
+    text-align: center;
+}
+
+section.main-dashboard div.gerenciarUsers section.users div.usuarios div.users-single h4 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+section.main-dashboard div.gerenciarUsers section.users div.usuarios div.users-single h4 a:hover{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+section.main-dashboard div.gerenciarUsers section.users-infos {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+}
+
+section.main-dashboard div.gerenciarUsers section.users-infos h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.gerenciarUsers section.users-infos div.infos-users{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section.main-dashboard div.gerenciarUsers section.users-infos div.infos-users input{
+    width: 100%;
+    padding: 3px;
+    font-size: 15pt;
+    margin-top: 10px;
+    background-color: rgba(199, 199, 199, 0.747);
+    border: 0.2px solid rgb(124, 124, 124);
+    outline: 0;
+    box-shadow: 1px 1px 3px rgba(82, 82, 82, 0.479);
+}
+
+section.main-dashboard div.gerenciarUsers section.users-infos div.infos-users select{
+    width: 100%;
+    padding: 3px;
+    font-size: 15pt;
+    margin-top: 10px;
+    background-color: rgba(199, 199, 199, 0.747);
+    border: 0.2px solid rgb(124, 124, 124);
+    outline: 0;
+    box-shadow: 1px 1px 3px rgba(82, 82, 82, 0.479);
+}
+
+
+section.main-dashboard div.gerenciarUsers section.users-infos div.infos-users label{
+    width: 100%;
+    font-size: 18pt;
+    margin-top: 5px;
+}
+
+
+section.main-dashboard div.criarUsers{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: 700px;
+    overflow-x: hidden;
+    display: none;
+}
+
+section.main-dashboard div.criarUsers h2{
+    text-align: center;
+    width: 100%;
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section.main-dashboard div.criarUsers section.createUser{
+    width: 100%;
+    margin: 0 auto 70px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.criarUsers section.createUser form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section.main-dashboard div.criarUsers section.createUser form input{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 13pt;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    border: 1px solid rgb(168, 168, 168);
+}
+
+section.main-dashboard div.criarUsers section.createUser form select{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 13pt;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    border: 1px solid rgb(168, 168, 168);
+}
+
+section.main-dashboard div.criarUsers section.createUser form label{
+    width: 100%;
+    font-size: 18pt;
+    margin-top: 10px;
+    position: relative;
+    left: 12.5%;
+}
+
+section.main-dashboard div.criarUsers section.createUser form input[type=submit]{
+    background-image: linear-gradient(to right , #b8f55e,#64f740,#5ef5f5,#84fad2);
+    border: 0;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    font-size: 15pt;
+    text-shadow: 1px 1px 2px rgba(82, 82, 82, 0.404);
+    transition: 0.5s;
+}
+
+section.main-dashboard div.criarUsers section.createUser form input[type=submit]:hover{
+    background-image: linear-gradient(to right , #9bce4f,#55ca37,#51cfcf,#73d6b5);
+}
+
+
+@media screen and (max-width:768px) {
+
+    header.dashboard-menu nav.menu-dashboard{
+        position: relative;
+        left: 84%;
+    }
+
+    div.userModal{
+        width: 25%;
+        position: absolute;
+        left: 74%;
+    }
+}
+
+/*Login dashboard*/
+
+section.bg-login{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(102, 102, 102, 0.411);
+}
+
+section.bg-login section.login-dashboard{
+    width: 25%;
+    height: 35%;
+    padding: 20px;
+    border: 1px solid rgb(173, 173, 173);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 10px rgba(77, 77, 77, 0.733);
+    background-color: white;
+}
+
+section.bg-login section.login-dashboard div.login{
+    margin: 0 auto;
+}
+
+section.bg-login section.login-dashboard div.login h2{
+    text-align: center;
+    font-size: 20pt;
+    padding-bottom: 10px;
+}
+
+section.bg-login section.login-dashboard div.login form{
+    max-width: 75%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section.bg-login section.login-dashboard div.login form input{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12pt;
+}
+
+section.bg-login section.login-dashboard div.login form input[type=submit]{
+    background-image: linear-gradient(to right , #9bce4f,#55ca37,#51cfcf,#73d6b5);
+    color: white;
+    text-shadow: 1px 1px 8px rgb(82, 82, 82);
+    box-shadow: 1px 1px 6px rgb(82,82,82);
+    border: 0;
+    cursor: pointer;
+    font-size: 14pt;
+    transition: 0.3s;
+}
+
+section.bg-login section.login-dashboard div.login form input[type=submit]:hover{
+    background-image: linear-gradient(to right , #9bce4f,#55ca37,#51cfcf,#73d6b5);
+}

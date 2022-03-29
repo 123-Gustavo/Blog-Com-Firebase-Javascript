@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Projeto 05</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2><a href="#">Blog</a></h2>
+        </div>
+        <div class="menu">
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Mais Lidas</a></li>
+                    <li><a href="#" class="btn-logar">Logar</a></li>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <h2><i class="fa-solid fa-bars"></i></h2>
+                <ul class="items-menu-mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Mais Lidas</a></li>
+                    <li><a href="#" class="btn-logar">Logar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="search">
+        <div>
+            <p><i class="fa-solid fa-search"></i><input type="text" name="search-noticia" id="search-noticia" placeholder="Digite oque deseja pesquisar... "></p>
+        </div>
+    </section>
+    
+    <section class="main">
+        <div class="infos">
+            <div class="categorias">
+                <div class="title-category">
+                    <h2><i class="fa-solid fa-folder-open"></i> Categorias</h2>
+                </div>
+                <div class="categorys">
+                    <ul>
+            
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="noticias-area">
+            <div class="img-noticia-infos">
+                <img src="">
+            </div>
+            <div class="infos-noticia">
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="criarModalLogar">
+        <div class="modalLogar">
+            <h2 class="closeModalLogar"><i class="far fa-times-circle"></i></h2>
+            <div class="formLogar">
+                <form action="" method="post">
+                    <label for="logarEmail">Email: </label>
+                    <input type="email" name="logar-email" id="logarEmail" placeholder="Insira o seu email aqui..."/>
+                    <label for="logarSenha">Senha: </label>
+                    <input type="password" name="logar-senha" id="logarSenha" placeholder="Insira a sua senha aqui..."/>
+                    <input type="submit" value="Logar!">
+                    <h3><a href="#">Cadastre-se aqui</a></h3>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="criarModalCadastrar">
+        <div class="modalCadastrar">
+            <h2 class="closeModalCadastrar"><i class="far fa-times-circle"></i></h2>
+            <div class="formCadastrar">
+                <form action="" method="post">
+                    <label for="cadastrarNome">Nome: </label>
+                    <input type="text" name="cadastrar-nome" id="cadastrarNome" placeholder="Insira seu nome de usuario aqui...">
+                    <label for="cadastrarEmail">Email: </label>
+                    <input type="email" name="cadastrar-email" id="cadastrarEmail" placeholder="Insira o seu email aqui..."/>
+                    <label for="cadastrarSenha">Senha: </label>
+                    <input type="password" name="cadastrar-senha" id="cadastrarSenha" placeholder="Insira a sua senha aqui..."/>
+                    <label for="cadastrarSenha">Comfirme a Senha: </label>
+                    <input type="password" name="cadastrar-ComfirmarSenha" id="cadastrarComfirmarSenha" placeholder="Insira a sua senha aqui..."/>
+                    <input type="submit" value="Cadastrar!">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="logo">
+            <h4>&copy; Todos os direitos reservados. </h4>
+        </div>
+        <div class="menu">
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Mais Lidas</a></li>
+                    <li><a href="#" class="btn-logar">Logar</a></li>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <h2><i class="fas fa-bars"></i></h2>
+                <ul class="items-menu-mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Mais Lidas</a></li>
+                    <li><a href="#" class="btn-logar">Logar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b2796bb008.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        infoNoticia()
+    </script>
+</body>
+</html>
